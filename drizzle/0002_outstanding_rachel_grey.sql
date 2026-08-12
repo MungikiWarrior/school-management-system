@@ -1,0 +1,2 @@
+ALTER TABLE `credentialNotifications` RENAME COLUMN `temporaryPassword` TO `temporaryPasswordHash`;--> statement-breakpoint
+ALTER TABLE `credentialNotifications` MODIFY COLUMN `temporaryPasswordHash` varchar(128) NOT NULL;
